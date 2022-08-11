@@ -1,7 +1,11 @@
 import React from 'react';
+
+import style from 'styled-components'
+
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from '../components/textField';
+import TextField from '../components/textField';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
