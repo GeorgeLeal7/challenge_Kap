@@ -1,13 +1,16 @@
 import React from 'react';
 
-import style from 'styled-components'
+import { 
+  Container,
+  TitlePage,
+} from '../components/styled';
 
 function Home() {
   return(
-    <div>
-      <h1>HOME</h1>
-    </div>
+    <Container>
+      <TitlePage>HOME</TitlePage>
+    </Container>
   );
 };
 
-export default Home
+export default Home;
