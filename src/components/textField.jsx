@@ -1,21 +1,21 @@
 import React from 'react';
 
-import { Field, Input } from './styled';
+import { Field, Input, Label } from './styled';
 
 const TextField = ({value, label, onChange}) => {
+    label = 'Primeiro desafiu mermão:'
 
-    const handleChange = () => {
-        const value = "se virem";
+    const handleChange = (event) => {
+        const value = event.target.value;
 
+        console.log(value);
         onChange?.(value)
     }
 
     return (
         <Field>
-            <span>{label}</span>
-            <Input>
-                <input value={value} onChange={handleChange}/>
-            </Input>
+            <Label>{label}</Label>
+            <Input value={value} onChange={handleChange} placeholder='Digite algo...'/>
         </Field>
     )
 }
