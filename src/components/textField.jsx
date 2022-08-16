@@ -1,7 +1,5 @@
 import React from 'react';
 
-//import styled from 'styled-components'
-
 import { Field, Input } from './styled';
 
 const TextField = ({value, label, onChange}) => {
@@ -16,10 +14,10 @@ const TextField = ({value, label, onChange}) => {
         <Field>
             <span>{label}</span>
             <Input>
-                <input value={value} onChange={handled}/>
+                <input value={value} onChange={handleChange}/>
             </Input>
         </Field>
     )
 }
 
-export default TextField
+export default TextField;

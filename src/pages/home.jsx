@@ -5,10 +5,13 @@ import {
   TitlePage,
 } from '../components/styled';
 
+import TextField from '../components/textField';
+
 function Home() {
   return(
     <Container>
-      <TitlePage>HOME</TitlePage>
+      <TitlePage><h1>HOME</h1></TitlePage>
+      <TextField />
     </Container>
   );
 };
